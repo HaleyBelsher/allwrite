@@ -17,29 +17,27 @@ more to the location of the text than the type of text it is.*/
 .site-header {
     /*The background-color indicates what will be behind the text.
     It is measured in hex.*/
-    position:relative;
+    display: flex; /* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+    justify-content: space-between;
+    align-items: center;
     background-color:#371952;
     /*The width indicates how much of the width of the screen will
     be the background color.*/
-    width:100dvw;
-    height:12dvh;
     /*Overflow describes what happens to the text that goes beyond
     the container. Auto allows scrolling, but only shows scroll
     bars when necessary.*/
-    overflow: hidden;
     color:#d8d8d8;
+    padding: 0 2rem;
         } 
      
 .site-title { 
 /*Float means that the element should tend toward that side of
 the container.*/
-    float:left;
+    
  /*Padding is how much padding there is for each side of an element,
     and the default is to use all sides. You can use -top, -right, 
     -bottom, and -left to fix that.*/
-    padding-left:3.66dvw;
-    padding-top:0.18dvh;
-    padding-bottom:0.25dvh;
+
     }
 
 svg {
@@ -48,10 +46,7 @@ svg {
 }
 
 .search {
-    float:right;
-    position:absolute;
-    top:2.7dvh;
-    right:3.66dvh;
+    
 }
 
 h2 { 
@@ -68,30 +63,24 @@ body {
     font-size:16px;
     background-color:#f2ffee;
 }
- 
-
-.site-header::after{ 
-clear:both;
-}
 
 .bottom {
 height:8dvh;
-width:90dvw;
-padding-left:3.66dvw;
-padding-right:3.66dvw;
-padding-bottom:3dvh;
-padding-top:2dvh;
 border:1px; 
 border-color:white;
 }
 
 .site-footer {
 position:fixed;
-top:88dvh;
+width: 100%;
+bottom:0;
 left:0dvw;
 background-color:#371952;
-width:100dvw;
-height:12dvh;
-overflow: hidden;
 color:#d8d8d8;
     } 
+
+.bottom {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem 0;
+}

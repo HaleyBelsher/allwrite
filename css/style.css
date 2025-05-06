@@ -1,0 +1,96 @@
+/* Title: AllWrite
+Purpose: To code one screen of the AllWrite Prototype for ENGL 5050:
+User Experience and Architecture.
+
+Note: This will include more comments than most code becuase I want
+to look back at this text later to learn further coding.
+*/
+ 
+h1 { 
+    font-size: 4.2dvh;
+    font-family:Bangla MN, Geneva, Verdana, sans-serif;
+} 
+
+/*The period says that "site-header" is a class. The class refers
+more to the location of the text than the type of text it is.*/
+.site-header {
+    /*The background-color indicates what will be behind the text.
+    It is measured in hex.*/
+    position:relative;
+    background-color:#371952;
+    /*The width indicates how much of the width of the screen will
+    be the background color.*/
+    width:100dvw;
+    height:12dvh;
+    /*Overflow describes what happens to the text that goes beyond
+    the container. Auto allows scrolling, but only shows scroll
+    bars when necessary.*/
+    overflow: hidden;
+    color:#d8d8d8;
+        } 
+     
+.site-title { 
+/*Float means that the element should tend toward that side of
+the container.*/
+    float:left;
+ /*Padding is how much padding there is for each side of an element,
+    and the default is to use all sides. You can use -top, -right, 
+    -bottom, and -left to fix that.*/
+    padding-left:3.66dvw;
+    padding-top:0.18dvh;
+    padding-bottom:0.25dvh;
+    }
+
+svg {
+    color:#d8d8d8;
+    overflow:visible
+}
+
+.search {
+    float:right;
+    position:absolute;
+    top:2.7dvh;
+    right:3.66dvh;
+}
+
+h2 { 
+font-size:xx-large;
+}
+
+/* Body is the selector. This means we are pointing to body text,
+which is a type of text. We would point to this in the HTML file, 
+and the code will match this. */
+body {
+    margin:0;
+    padding:0;
+    font-family:sans-serif; 
+    font-size:16px;
+    background-color:#f2ffee;
+}
+ 
+
+.site-header::after{ 
+clear:both;
+}
+
+.bottom {
+height:8dvh;
+width:90dvw;
+padding-left:3.66dvw;
+padding-right:3.66dvw;
+padding-bottom:3dvh;
+padding-top:2dvh;
+border:1px; 
+border-color:white;
+}
+
+.site-footer {
+position:fixed;
+top:88dvh;
+left:0dvw;
+background-color:#371952;
+width:100dvw;
+height:12dvh;
+overflow: hidden;
+color:#d8d8d8;
+    } 

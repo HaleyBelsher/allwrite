@@ -9,7 +9,6 @@ to look back at this text later to learn further coding.
 h1 { 
     font-size: 4.2dvh;
     font-family:Bangla MN, Geneva, Verdana, sans-serif;
-    
 } 
 
 /*The period says that "site-header" is a class. The class refers
@@ -18,6 +17,10 @@ more to the location of the text than the type of text it is.*/
     /*The background-color indicates what will be behind the text.
     It is measured in hex.*/
     position:relative;
+    padding-left:2.7dvw;
+    padding-right:2.7dvw;
+    display:flex;
+    justify-content:space-between;
     background-color:#371952;
     /*The width indicates how much of the width of the screen will
     be the background color.*/
@@ -26,25 +29,15 @@ more to the location of the text than the type of text it is.*/
     /*Overflow describes what happens to the text that goes beyond
     the container. Auto allows scrolling, but only shows scroll
     bars when necessary.*/
-    overflow: hidden;
+    overflow:hidden;
     color:#d8d8d8;
         } 
-     
-.site-title { 
-/*Float means that the element should tend toward that side of
-the container.*/
-    float:left;
- /*Padding is how much padding there is for each side of an element,
-    and the default is to use all sides. You can use -top, -right, 
-    -bottom, and -left to fix that.*/
-    padding-left:3.66dvw;
-    padding-top:0.18dvh;
-    padding-bottom:0.25dvh;
-    }
 
 svg {
     color:#d8d8d8;
     overflow:visible
+    width: 100%;
+    height:auto;
 }
 
 .search {
@@ -69,10 +62,6 @@ body {
     background-color:#f2ffee;
 }
  
-
-.site-header::after{ 
-clear:both;
-}
 
 .bottom {
 height:8dvh;

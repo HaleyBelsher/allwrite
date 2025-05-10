@@ -5,15 +5,22 @@ User Experience and Architecture.
 Note: This will include more comments than most code becuase I want
 to look back at this text later to learn further coding.
 */
+
+/* I'm adding a basic reset here to make things easier for you */
+html, body, main, div, section, article, aside, header, footer, table {
+    padding: 0; 
+    margin: 0;
+}
  
 svg {
-    color:#d8d8d8;
-    overflow:visible
+    color:#d8d8d8; 
+    /* I removed overflow visibility here */
 }
 
 h1 { 
     font-size: 2em;
-    font-family:Bangla MN, Geneva, Verdana, sans-serif;
+    font-family: "Bangla MN", Geneva, Verdana, sans-serif;
+    /* I added quote marks around two-word font names */
 } 
 
 /*The period says that "site-header" is a class. The class refers
@@ -21,11 +28,11 @@ more to the location of the text than the type of text it is.*/
 .site-header {
     /*The background-color indicates what will be behind the text.
     It is measured in hex.*/
-    z-index:1000;
+    /* z-index:1000; z-index has no effect on this element at this time (since it's not positioned) */
     padding-left:2.7dvw;
     padding-right:2.7dvw;
     height:12dvh;
-    width:100%;
+    /* width:100%; this rule was causing width problems, better to let the browser handle width when you can */
     display:flex;
     justify-content:space-between;
     align-items:center;
@@ -39,10 +46,14 @@ more to the location of the text than the type of text it is.*/
     color:#d8d8d8;
         } 
 
-.siteheader svg{
-    width:1dvh;
+/* The class selector below had a typo (no dash), preventing it from working */
+.site-header svg {
+    /* probably don't want to use dvh units here, since they change so frequently. */
+    /* width:1dvh;
     height:1dvh;
-    max-width:1dvh;
+    max-width:1dvh; */
+    width: 32px;
+    height: auto;
 }
         
 /*This is to make a div for the body content*/
@@ -67,7 +78,7 @@ more to the location of the text than the type of text it is.*/
 
 /*This is the formatting for the text included on the homepage.*/
 /*Titles of resources only*/
-resource-title {
+.resource-title {
 position:relative;
 margin:3%;
 padding-top:30%;
@@ -75,6 +86,29 @@ font-size:1.7em;
 font-family:Avenir, Calibri, sans-serif;
 overflow:hidden;
 color:#677DB7;
+}
+
+.site-title { 
+/*Float means that the element should tend toward that side of
+the container.*/
+    
+ /*Padding is how much padding there is for each side of an element,
+    and the default is to use all sides. You can use -top, -right, 
+    -bottom, and -left to fix that.*/
+
+    }
+
+svg {
+    color:#d8d8d8;
+    overflow:visible
+}
+
+.search {
+    
+}
+
+h2 { 
+font-size:xx-large;
 }
 
 /*When a person is in the title of an article, use this selector.*/

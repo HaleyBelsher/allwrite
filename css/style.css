@@ -6,8 +6,13 @@ Note: This will include more comments than most code becuase I want
 to look back at this text later to learn further coding.
 */
  
+svg {
+    color:#d8d8d8;
+    overflow:visible
+}
+
 h1 { 
-    font-size: 4.2dvh;
+    font-size: 2em;
     font-family:Bangla MN, Geneva, Verdana, sans-serif;
 } 
 
@@ -16,16 +21,17 @@ more to the location of the text than the type of text it is.*/
 .site-header {
     /*The background-color indicates what will be behind the text.
     It is measured in hex.*/
-    position:relative;
+    z-index:1000;
     padding-left:2.7dvw;
     padding-right:2.7dvw;
+    height:12dvh;
+    width:100%;
     display:flex;
     justify-content:space-between;
+    align-items:center;
     background-color:#371952;
     /*The width indicates how much of the width of the screen will
     be the background color.*/
-    width:100dvw;
-    height:12dvh;
     /*Overflow describes what happens to the text that goes beyond
     the container. Auto allows scrolling, but only shows scroll
     bars when necessary.*/
@@ -33,54 +39,125 @@ more to the location of the text than the type of text it is.*/
     color:#d8d8d8;
         } 
 
-svg {
+.siteheader svg{
+    width:1dvh;
+    height:1dvh;
+    max-width:1dvh;
+}
+        
+/*This is to make a div for the body content*/
+.body {
+    position:fixed;
+    top:13dvh;
+    width:100%;
+    height:74dvh;
+    overflow:scroll;    
+}
+
+/*This is the formatting for the resource articles*/
+.resource-box {
+    margin:1em;
+    height:5em;
+    background-color: #f4f4f4;
+    box-sizing:border-box;
+    display:flex;
+    flex-direction:column;
+}
+
+
+/*This is the formatting for the text included on the homepage.*/
+/*Titles of resources only*/
+resource-title {
+position:relative;
+margin:3%;
+padding-top:30%;
+font-size:1.7em;
+font-family:Avenir, Calibri, sans-serif;
+overflow:hidden;
+color:#677DB7;
+}
+
+/*When a person is in the title of an article, use this selector.*/
+person-title {
+font-size:1.5em;
+font-family:Avenir, Calibri, sans-serif;
+overflow:hidden;
+color: #677DB7;
+}
+
+/*This text goes after the person's name in comment articles*/
+comment-story {
+font-size: 1em;
+font-weight:lighter;
+font-family:Avenir, Calibri, sans-serif;
+overflow:hidden;
+color: #677DB7;
+}
+
+/*This is the default text to act as additional info.*/
+sub-text{
+font-size:1em;
+font-weight:lighter;
+font-family:Avenir, Calibri, sans-serif;
+overflow:hidden;
+color:#79839E
+}
+
+/*This is link text. It just underlines it.*/
+#link {
+text-decoration-line:underline;
+}
+
+
+/*This is the type of box for the resources*/
+.resource-box {
+
+}
+
+
+
+
+
+
+
+/*This governs the text in the footer.*/
+footer { 
+    font-size:.9em;
+    font-family:Avenir, Calibri, sans-serif;
     color:#d8d8d8;
-    overflow:visible
-    width: 100%;
-    height:auto;
-}
+    }
 
-.search {
-    float:right;
-    position:absolute;
-    top:2.7dvh;
-    right:3.66dvh;
-}
+/*The footer is the entire bottom box*/
+.site-footer {
+    position:fixed;
+    top:88dvh;
+    left:0dvw;
+    background-color:#371952;
+    width:100dvw;
+    height:12dvh;
+    overflow: hidden;
+    color:#d8d8d8;
+        } 
 
-h2 { 
-font-size:xx-large;
-}
-
-/* Body is the selector. This means we are pointing to body text,
-which is a type of text. We would point to this in the HTML file, 
-and the code will match this. */
-body {
-    margin:0;
-    padding:0;
-    font-family:sans-serif; 
-    font-size:16px;
-    background-color:#f2ffee;
-}
- 
-
+/*The bottom is the SVG section at the bottom.*/      
 .bottom {
+position:relative;
 height:8dvh;
 width:90dvw;
-padding-left:3.66dvw;
-padding-right:3.66dvw;
+padding-left:5dvw;
+padding-right:5dvw;
 padding-bottom:3dvh;
 padding-top:2dvh;
-border:1px; 
-border-color:white;
+display:flex;
+justify-content:space-between;
 }
 
-.site-footer {
-position:fixed;
-top:88dvh;
-left:0dvw;
-background-color:#371952;
-width:100dvw;
-height:12dvh;
-overflow: hidden;
-color:#d8d8d8;
-    } 
+/*The footer-buttons section is to put the text centered below
+each image.*/
+.footer-buttons {
+text-align:center;
+}
+
+
+
+

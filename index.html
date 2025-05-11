@@ -6,20 +6,9 @@
         <title>AllWrite</title>
         <link rel="stylesheet" href="css/style.css" />
     </head>
-<!--The body section contains ALL of the contents of the website.
-    There can only be one body section in the html document.-->
+
     <body>
-<!--The header section is for what is at the top of the page.-->  
     <header id="h1" class="site-header">
-<!--svg simply enters an inline svg file. You can also insert
-    svg files, but I had altered this one in Sketch. I copied
-    and pasted the svg code here.-->
-<!--class="site-title" means that we are going to point to both
-the information in h1 and in the .site-title section of the
-css file.-->         
-<!--h1, h2, down to h6, are the types of sections in an html
-    document. These correspond to css sections, so you can
-    format all h1 the same, h2 the same, and so on.-->
         <h1 class="site-header">AllWrite</h1>
         <svg class="site-header" width="58px" height="58px" viewBox="0 0 58 58" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -28,23 +17,76 @@ css file.-->
         </svg>
     </header>
 
-
-
-<!--This is a placeholder so I can see what the footer looks like-->
 <div class="body">
+
+<!--This is the guiding line above resources.-->
+<hr width="97%" size="4" color="#A3A99B"></hr>
+
+<h2>Resources for You</h2>
 
     <!--This is an article for one Resource.-->
     <article class="resource-box">
-        <resource-title>Introductions in 3 Easy Steps</resource-title>
-        <sub-text>bumpadump, Teacher, 3 yrs experience</sub-text>
+        <span id="link" class="resource-title">Introductions in 3 Easy Steps</span>
+        <span class="resource-text">bumpadump, Teacher, 3 yrs experience</span>
+    </article>
+
+    <!--Resource 2-->
+    <article class="resource-box">
+        <span id="link" class="resource-title">Transitions Quick Tip</span>
+        <span class="resource-text">pinkhorses22, Student, Grade 10</span>
+    </article>
+
+    <!--Resource 3-->
+    <article class="resource-box">
+        <span id="link" class="resource-title">Organizing Novels</span>
+        <span class="resource-text">purplepuppy66, Professional, 22 yrs experience</span>
+    </article>
+
+
+    <hr width="97%" size="4" color="#A3A99B"></hr>
+    <h2>Comments</h2>
+    <!--Comment 1-->
+    <article class="c-box">
+        <div class="wrap-iblock"><span class="person-comment">boogiedog1</span><!----><span class="comment-story">  on "My Little Flame to Tend"</span></div>
+        <span id="link" class="comment-text">This paper provides a comprehensive analysis of the topic, offering valuable insights and perspectives.</span>
+    </article>
+
+    <!--Comment 2-->
+    <article class="c-box">
+        <div class="wrap-iblock"><span class="person-comment">sisygi</span><!----><span class="comment-story">  on "Land Use Management Shows No Apparent Effect on Farm Income"</span></div>
+        <span id="link" class="comment-text">The methodology used in this study is robust and well-structured, contributing significantly to the field.</span>
+    </article>
+
+    <hr width="97%" size="4" color="#A3A99B"></hr>
+    <h2>Chat</h2>
+    <!--Chat 1-->
+    <article class="c-box">
+        <div class="row">
+            <div class="column-1">
+                <img src="https://images.unsplash.com/photo-1575543483595-568b7afb6b9e?q=80&w=2535&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Flower">
+            </div>
+            <div class="column-2">
+        <span class="person-chat">rosybw</span>
+        <span class="chat-text">see you at 7!</span>
+            </div>
+        </div>
+    </article>
+
+    <!--Chat 2-->
+    <article class="c-box">
+        <div class="row">
+            <div class="column-1">
+        <img src="https://images.unsplash.com/photo-1561037404-61cd46aa615b?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Dog">
+            </div>
+            <div class="column-2">
+        <span class="person-chat">lazybones</span>
+        <span class="chat-text">ur the best uwu</span>
+            </div>
+            </div>
     </article>
 </div>
 
-<!--This is the footer, which is the bottom of the screen. My hope
-is to make this stay where it is no matter what the height of the
-screen is.-->
 <footer class="site-footer">
-<!--next steps: add all 5 SVGs from the prototype. Do it as code to make it easier.-->
         <div class="bottom">
 <!--Account SVG-->
 <div class="footer-buttons">
